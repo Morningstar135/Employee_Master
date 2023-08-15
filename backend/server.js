@@ -1,0 +1,11 @@
+const express = require('express')
+const route = require("./src/routes/routes")
+const db = require("./src/models/db")
+const cors = require('cors')
+const app = express()
+db()
+app.use(express.json())
+app.use(cors())
+app.use("/", route)
+const port = 8080
+app.listen(port, () => console.log(`listening on port ${port}!`))

@@ -1,14 +1,1 @@
-ul li{
-    list-style: none;
-}
 
-input{
-    outline: none;
-    outline-offset: 0px;
-}
-#head{
-    width: 300px;
-}
-.mx-auto{
-    width:400px;
-}
